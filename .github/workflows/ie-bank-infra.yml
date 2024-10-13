@@ -17,14 +17,20 @@ jobs:
     steps:
 
       # Checkout code
-    - uses: actions/checkout@main
+    - uses: actions/checkout@v3
 
       # Lint Bicep code 
     - name: Run Bicep linter
       run: az bicep build --file ./main.bicep
 
+      # Upload Bicep build artifact
+    - name: Upload Bicep build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: bicep-build
+        path: ./main.bicep
+
   deploy-dev:
-#   if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
     needs: build
     environment:
@@ -33,7 +39,7 @@ jobs:
     steps:
 
       # Checkout code
-    - uses: actions/checkout@main
+    - uses: actions/checkout@v3
     
       # Log into Azure
     - uses: azure/login@v2
