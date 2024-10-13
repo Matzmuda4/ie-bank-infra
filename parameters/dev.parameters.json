@@ -6,22 +6,23 @@
             "value": "nonprod"
         },
         "postgreSQLServerName": {
-            "value": "jseijas-dbsrv-dev"
+            "value": "Mat-dbsrv-dev"
         },
         "postgreSQLDatabaseName": {
-            "value": "jseijas-db-dev"
+            "value": "Mat-db-dev"
         },
         "appServicePlanName": {
-            "value": "jseijas-asp-dev"
+            "value": "Mat-asp-dev"
         },
         "appServiceAPIAppName": {
-            "value": "jseijas-be-dev"
+            "value": "Mat-be-dev"
         },
         "appServiceAppName": {
-            "value": "jseijas-fe-dev"
+            "value": "Mat-fe-dev"
         },
         "location": {
             "value": "North Europe"
         }
     }
 }
+
