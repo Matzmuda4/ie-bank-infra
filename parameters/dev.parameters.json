@@ -6,23 +6,22 @@
             "value": "nonprod"
         },
         "postgreSQLServerName": {
-            "value": "Mat-dbsrv-dev"
+            "value": "mat-dbsrv-dev"
         },
         "postgreSQLDatabaseName": {
-            "value": "Mat-db-dev"
+            "value": "mat-db-dev"
         },
         "appServicePlanName": {
-            "value": "Mat-asp-dev"
+            "value": "mat-asp-dev"
         },
         "appServiceAPIAppName": {
-            "value": "Mat-be-dev"
+            "value": "mat-be-dev"
         },
         "appServiceAppName": {
-            "value": "Mat-fe-dev"
+            "value": "mat-fe-dev"
         },
         "location": {
             "value": "North Europe"
         }
     }
 }
-
