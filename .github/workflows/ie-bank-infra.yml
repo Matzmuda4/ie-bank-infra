@@ -2,8 +2,10 @@ name: ie-bank-infra
 
 on:
   push:
-      paths:
-        - '!scripts/**'
+    branches:
+      - main
+    paths:
+      - '!scripts/**'  
   pull_request:
     branches:
       - main
