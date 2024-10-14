@@ -2,13 +2,10 @@ name: ie-bank-infra
 
 on:
   push:
-    branches:
-      - main
     paths:
       - '!scripts/**'  # Skip triggering workflow on changes to scripts folder
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
   workflow_dispatch:
 
 env:
