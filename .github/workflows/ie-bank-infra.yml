@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '!scripts/**'  # Skip triggering workflow on changes to scripts folder
+    branches: [ "main", "dev" ]
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
